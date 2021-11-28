@@ -1,18 +1,26 @@
 
+list_obj = document.querySelectorAll('p');
 
-let f = document.querySelector('#tab1');
+for (let a of list_obj) {
+   a.addEventListener('click', show_name);
+}
 
-//f.addEventListener('mouseover', ddd);
-f.addEventListener("click", ddd);
-f.addEventListener("wheel", ddd);
+function show_name() {
+
+   let a = 'nextElementSibling';
 
 
-let d = document.querySelector('#h_1');
-d.addEventListener('mouseover', ddd);
+   check_property(this.nextElementSibling, "Нет следующего брата");
 
-console.log(f);
+}
 
-// The function is incomprehensible for what
-function ddd() {
-   console.log(this.nodeName);
+
+
+function check_property(obj_tmp, msg_error) {
+   let rez;
+
+   if (obj_tmp) rez = obj_tmp.nodeName + " " + obj_tmp.id;
+   else rez = msg_error;
+   console.log(rez);
+
 }
