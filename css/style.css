@@ -1,0 +1,27 @@
+header {
+  background-color: black;
+}
+
+body {
+  font-size: 20px;
+}
+
+body div {
+  font-size: 10px;
+}
+
+body table {
+  color: #f11;
+}
+
+body table a {
+  font-size: 10px;
+}
+
+.vasia_red {
+  color: aqua;
+}
+
+.vasia_red2 {
+  font-size: 40px;
+}
