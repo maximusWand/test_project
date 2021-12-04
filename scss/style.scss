@@ -1,18 +1,19 @@
-@import "_nullformat";
-
-body {
-   font-size: 20px;
-   div {
-      font-size: 10px;
-   }
-   table {
-      color: #f11;
-      a {
-         font-size: 10px;
-      }
-   }
+.hide_class {
+   display: none;
 }
 
-p {
-   font-size: 20px;
+span {
+   display: block;
+}
+
+table,
+tr,
+td {
+   margin: 0px;
+   border: 1px solid black;
+   padding: 1px;
+}
+
+.red {
+   background-color: red;
 }
